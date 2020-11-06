@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FSTabbarView">
+            <connections>
+                <outlet property="contactBtn" destination="b8y-ql-Sgi" id="rk8-Qo-Uc3"/>
+                <outlet property="messageBtn" destination="arM-98-KcY" id="uvH-7R-S9Y"/>
+                <outlet property="moreBtn" destination="0ac-Xc-Fo1" id="oPB-D0-DbZ"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" tag="200" translatesAutoresizingMaskIntoConstraints="NO" id="b8y-ql-Sgi" customClass="FSTabbarBtn">
+                    <rect key="frame" x="76" y="13" width="28" height="28"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="menu-contact-normal" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="OeQ-6W-bNf">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="itemButtonClicked:" target="-2" id="Tt2-q0-Phq"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" tag="100" translatesAutoresizingMaskIntoConstraints="NO" id="arM-98-KcY" customClass="FSTabbarBtn">
+                    <rect key="frame" x="12" y="13" width="28" height="28"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="menu-message-down" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="JGr-3Y-T9u">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="itemButtonClicked:" target="-2" id="p8o-mY-ppd"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" tag="300" translatesAutoresizingMaskIntoConstraints="NO" id="0ac-Xc-Fo1" customClass="FSTabbarBtn">
+                    <rect key="frame" x="140" y="13" width="28" height="28"/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="menu-more-normal" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="gDA-XE-QPp">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="itemButtonClicked:" target="-2" id="fWJ-2i-HGc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="0ac-Xc-Fo1" firstAttribute="centerY" secondItem="b8y-ql-Sgi" secondAttribute="centerY" id="0Y5-2D-eri"/>
+                <constraint firstItem="b8y-ql-Sgi" firstAttribute="leading" secondItem="arM-98-KcY" secondAttribute="trailing" constant="36" id="2Se-eW-Izs"/>
+                <constraint firstItem="b8y-ql-Sgi" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="Brh-tr-6Zf"/>
+                <constraint firstItem="b8y-ql-Sgi" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="Hwu-zY-uuH"/>
+                <constraint firstItem="0ac-Xc-Fo1" firstAttribute="leading" secondItem="b8y-ql-Sgi" secondAttribute="trailing" constant="36" id="kDF-Ls-jYu"/>
+                <constraint firstItem="arM-98-KcY" firstAttribute="centerY" secondItem="b8y-ql-Sgi" secondAttribute="centerY" id="q2r-Zr-atI"/>
+            </constraints>
+            <point key="canvasLocation" x="-283" y="120"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="menu-contact-normal" width="28" height="28"/>
+        <image name="menu-message-down" width="28" height="28"/>
+        <image name="menu-more-normal" width="28" height="28"/>
+    </resources>
+</document>

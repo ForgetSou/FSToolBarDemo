@@ -3,24 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		482F06ED2551021500CFF635 /* FSMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 482F06EC2551021500CFF635 /* FSMessageVC.m */; };
+		482F06F22551022600CFF635 /* FSContactVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 482F06F12551022600CFF635 /* FSContactVC.m */; };
+		482F06F62551023400CFF635 /* FSMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 482F06F52551023400CFF635 /* FSMoreVC.m */; };
+		482F06F92551051300CFF635 /* message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482F06F82551051300CFF635 /* message.storyboard */; };
+		482F06FC2551052100CFF635 /* contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482F06FB2551052100CFF635 /* contact.storyboard */; };
+		482F06FF2551052900CFF635 /* more.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482F06FE2551052900CFF635 /* more.storyboard */; };
+		483A5C4E254FFA5300A223F1 /* FSTabbarBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 483A5C4D254FFA5300A223F1 /* FSTabbarBtn.m */; };
+		483A5C52254FFAAC00A223F1 /* FSTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 483A5C51254FFAAC00A223F1 /* FSTabbarView.m */; };
+		483A5C55254FFAD000A223F1 /* FSTabbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483A5C54254FFAD000A223F1 /* FSTabbarView.xib */; };
+		4894561E255007DB00E267B7 /* FSMainCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4894561D255007DB00E267B7 /* FSMainCtl.m */; };
 		48B7A096254A54FA00F72DF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B7A095254A54FA00F72DF8 /* AppDelegate.m */; };
-		48B7A099254A54FA00F72DF8 /* FSMainCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B7A098254A54FA00F72DF8 /* FSMainCtl.m */; };
 		48B7A09B254A54FD00F72DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B7A09A254A54FD00F72DF8 /* Assets.xcassets */; };
 		48B7A09E254A54FD00F72DF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B7A09C254A54FD00F72DF8 /* Main.storyboard */; };
 		48B7A0A1254A54FD00F72DF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B7A0A0254A54FD00F72DF8 /* main.m */; };
 		48B7A0AB254A555600F72DF8 /* FSWindowCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B7A0AA254A555600F72DF8 /* FSWindowCtl.m */; };
+		48B7A0B3254AB1B100F72DF8 /* FSCustomBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B7A0B2254AB1B100F72DF8 /* FSCustomBtn.m */; };
+		D0DA05FA26A3DB77917B3551 /* Pods_FSToolBarDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE3D375ADC182A512B92D01 /* Pods_FSToolBarDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12E8BB30520D3319CC01F2F2 /* Pods-FSToolBarDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSToolBarDemo.release.xcconfig"; path = "Target Support Files/Pods-FSToolBarDemo/Pods-FSToolBarDemo.release.xcconfig"; sourceTree = "<group>"; };
+		34E070D878E6CD4E1F31C050 /* Pods-FSToolBarDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSToolBarDemo.debug.xcconfig"; path = "Target Support Files/Pods-FSToolBarDemo/Pods-FSToolBarDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3DE3D375ADC182A512B92D01 /* Pods_FSToolBarDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSToolBarDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		482F06EB2551021500CFF635 /* FSMessageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSMessageVC.h; sourceTree = "<group>"; };
+		482F06EC2551021500CFF635 /* FSMessageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSMessageVC.m; sourceTree = "<group>"; };
+		482F06F02551022600CFF635 /* FSContactVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSContactVC.h; sourceTree = "<group>"; };
+		482F06F12551022600CFF635 /* FSContactVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSContactVC.m; sourceTree = "<group>"; };
+		482F06F42551023400CFF635 /* FSMoreVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSMoreVC.h; sourceTree = "<group>"; };
+		482F06F52551023400CFF635 /* FSMoreVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSMoreVC.m; sourceTree = "<group>"; };
+		482F06F82551051300CFF635 /* message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = message.storyboard; sourceTree = "<group>"; };
+		482F06FB2551052100CFF635 /* contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = contact.storyboard; sourceTree = "<group>"; };
+		482F06FE2551052900CFF635 /* more.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = more.storyboard; sourceTree = "<group>"; };
+		483A5C4C254FFA5300A223F1 /* FSTabbarBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSTabbarBtn.h; sourceTree = "<group>"; };
+		483A5C4D254FFA5300A223F1 /* FSTabbarBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSTabbarBtn.m; sourceTree = "<group>"; };
+		483A5C50254FFAAC00A223F1 /* FSTabbarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSTabbarView.h; sourceTree = "<group>"; };
+		483A5C51254FFAAC00A223F1 /* FSTabbarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSTabbarView.m; sourceTree = "<group>"; };
+		483A5C54254FFAD000A223F1 /* FSTabbarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSTabbarView.xib; sourceTree = "<group>"; };
+		4894561D255007DB00E267B7 /* FSMainCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMainCtl.m; sourceTree = "<group>"; };
 		48B7A091254A54FA00F72DF8 /* FSToolBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSToolBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B7A094254A54FA00F72DF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48B7A095254A54FA00F72DF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		48B7A097254A54FA00F72DF8 /* FSMainCtl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSMainCtl.h; sourceTree = "<group>"; };
-		48B7A098254A54FA00F72DF8 /* FSMainCtl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSMainCtl.m; sourceTree = "<group>"; };
 		48B7A09A254A54FD00F72DF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B7A09D254A54FD00F72DF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48B7A09F254A54FD00F72DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -28,6 +56,8 @@
 		48B7A0A2254A54FD00F72DF8 /* FSToolBarDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FSToolBarDemo.entitlements; sourceTree = "<group>"; };
 		48B7A0A9254A555600F72DF8 /* FSWindowCtl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSWindowCtl.h; sourceTree = "<group>"; };
 		48B7A0AA254A555600F72DF8 /* FSWindowCtl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSWindowCtl.m; sourceTree = "<group>"; };
+		48B7A0B1254AB1B100F72DF8 /* FSCustomBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCustomBtn.h; sourceTree = "<group>"; };
+		48B7A0B2254AB1B100F72DF8 /* FSCustomBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCustomBtn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +65,121 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DA05FA26A3DB77917B3551 /* Pods_FSToolBarDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25C8F4F23D48396B9B5D4203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DE3D375ADC182A512B92D01 /* Pods_FSToolBarDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		482F06E8255101AC00CFF635 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				482F06F42551023400CFF635 /* FSMoreVC.h */,
+				482F06F52551023400CFF635 /* FSMoreVC.m */,
+				482F06FE2551052900CFF635 /* more.storyboard */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		482F06E9255101B300CFF635 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				482F06F02551022600CFF635 /* FSContactVC.h */,
+				482F06F12551022600CFF635 /* FSContactVC.m */,
+				482F06FB2551052100CFF635 /* contact.storyboard */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		482F06EA255101BA00CFF635 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				482F06EB2551021500CFF635 /* FSMessageVC.h */,
+				482F06EC2551021500CFF635 /* FSMessageVC.m */,
+				482F06F82551051300CFF635 /* message.storyboard */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		483A5C5A2550075400A223F1 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				48B7A0B1254AB1B100F72DF8 /* FSCustomBtn.h */,
+				48B7A0B2254AB1B100F72DF8 /* FSCustomBtn.m */,
+				483A5C4C254FFA5300A223F1 /* FSTabbarBtn.h */,
+				483A5C4D254FFA5300A223F1 /* FSTabbarBtn.m */,
+				483A5C50254FFAAC00A223F1 /* FSTabbarView.h */,
+				483A5C51254FFAAC00A223F1 /* FSTabbarView.m */,
+				483A5C54254FFAD000A223F1 /* FSTabbarView.xib */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		483A5C5B2550076F00A223F1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				48B7A09C254A54FD00F72DF8 /* Main.storyboard */,
+				483A5C5C2550077E00A223F1 /* AppDelegate */,
+				483A5C5D2550078C00A223F1 /* Window */,
+				483A5C5E2550079C00A223F1 /* Main */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		483A5C5C2550077E00A223F1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				48B7A094254A54FA00F72DF8 /* AppDelegate.h */,
+				48B7A095254A54FA00F72DF8 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		483A5C5D2550078C00A223F1 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				48B7A0A9254A555600F72DF8 /* FSWindowCtl.h */,
+				48B7A0AA254A555600F72DF8 /* FSWindowCtl.m */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		483A5C5E2550079C00A223F1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				48B7A097254A54FA00F72DF8 /* FSMainCtl.h */,
+				4894561D255007DB00E267B7 /* FSMainCtl.m */,
+				482F06EA255101BA00CFF635 /* Message */,
+				482F06E9255101B300CFF635 /* Contact */,
+				482F06E8255101AC00CFF635 /* More */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		48B0883125529C8F004D13ED /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				48B7A09A254A54FD00F72DF8 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		48B7A088254A54FA00F72DF8 = {
 			isa = PBXGroup;
 			children = (
 				48B7A093254A54FA00F72DF8 /* FSToolBarDemo */,
 				48B7A092254A54FA00F72DF8 /* Products */,
+				5D4243DB218E0B783D951C36 /* Pods */,
+				25C8F4F23D48396B9B5D4203 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,18 +195,22 @@
 			isa = PBXGroup;
 			children = (
 				48B7A0A2254A54FD00F72DF8 /* FSToolBarDemo.entitlements */,
-				48B7A094254A54FA00F72DF8 /* AppDelegate.h */,
-				48B7A095254A54FA00F72DF8 /* AppDelegate.m */,
-				48B7A0A9254A555600F72DF8 /* FSWindowCtl.h */,
-				48B7A0AA254A555600F72DF8 /* FSWindowCtl.m */,
-				48B7A097254A54FA00F72DF8 /* FSMainCtl.h */,
-				48B7A098254A54FA00F72DF8 /* FSMainCtl.m */,
-				48B7A09A254A54FD00F72DF8 /* Assets.xcassets */,
-				48B7A09C254A54FD00F72DF8 /* Main.storyboard */,
+				483A5C5B2550076F00A223F1 /* Core */,
+				483A5C5A2550075400A223F1 /* General */,
+				48B0883125529C8F004D13ED /* Resource */,
 				48B7A09F254A54FD00F72DF8 /* Info.plist */,
 				48B7A0A0254A54FD00F72DF8 /* main.m */,
 			);
 			path = FSToolBarDemo;
+			sourceTree = "<group>";
+		};
+		5D4243DB218E0B783D951C36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34E070D878E6CD4E1F31C050 /* Pods-FSToolBarDemo.debug.xcconfig */,
+				12E8BB30520D3319CC01F2F2 /* Pods-FSToolBarDemo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48B7A0A5254A54FD00F72DF8 /* Build configuration list for PBXNativeTarget "FSToolBarDemo" */;
 			buildPhases = (
+				FEE42662E869536D6F926818 /* [CP] Check Pods Manifest.lock */,
 				48B7A08D254A54FA00F72DF8 /* Sources */,
 				48B7A08E254A54FA00F72DF8 /* Frameworks */,
 				48B7A08F254A54FA00F72DF8 /* Resources */,
+				662C7F08DB1E04CEA743FA24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,22 +271,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482F06FC2551052100CFF635 /* contact.storyboard in Resources */,
+				482F06FF2551052900CFF635 /* more.storyboard in Resources */,
 				48B7A09B254A54FD00F72DF8 /* Assets.xcassets in Resources */,
 				48B7A09E254A54FD00F72DF8 /* Main.storyboard in Resources */,
+				482F06F92551051300CFF635 /* message.storyboard in Resources */,
+				483A5C55254FFAD000A223F1 /* FSTabbarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		662C7F08DB1E04CEA743FA24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSToolBarDemo/Pods-FSToolBarDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSToolBarDemo/Pods-FSToolBarDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FSToolBarDemo/Pods-FSToolBarDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEE42662E869536D6F926818 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FSToolBarDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48B7A08D254A54FA00F72DF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B7A0B3254AB1B100F72DF8 /* FSCustomBtn.m in Sources */,
+				483A5C4E254FFA5300A223F1 /* FSTabbarBtn.m in Sources */,
+				482F06F62551023400CFF635 /* FSMoreVC.m in Sources */,
 				48B7A0AB254A555600F72DF8 /* FSWindowCtl.m in Sources */,
-				48B7A099254A54FA00F72DF8 /* FSMainCtl.m in Sources */,
+				483A5C52254FFAAC00A223F1 /* FSTabbarView.m in Sources */,
 				48B7A0A1254A54FD00F72DF8 /* main.m in Sources */,
 				48B7A096254A54FA00F72DF8 /* AppDelegate.m in Sources */,
+				4894561E255007DB00E267B7 /* FSMainCtl.m in Sources */,
+				482F06ED2551021500CFF635 /* FSMessageVC.m in Sources */,
+				482F06F22551022600CFF635 /* FSContactVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +469,7 @@
 		};
 		48B7A0A6254A54FD00F72DF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34E070D878E6CD4E1F31C050 /* Pods-FSToolBarDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +490,7 @@
 		};
 		48B7A0A7254A54FD00F72DF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12E8BB30520D3319CC01F2F2 /* Pods-FSToolBarDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

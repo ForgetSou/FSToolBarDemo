@@ -1,0 +1,15 @@
+# 指明依赖库的来源地址
+source  'https://github.com/CocoaPods/Specs.git'
+
+#忽略cocopods库里所有的警告
+inhibit_all_warnings!
+
+target 'FSToolBarDemo' do
+  use_frameworks!
+  
+  # Common
+  pod 'Masonry'
+  
+  pod 'googleapis', :path => '.'
+
+end

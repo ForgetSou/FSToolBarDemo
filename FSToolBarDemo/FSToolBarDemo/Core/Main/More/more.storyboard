@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MoreVC-->
+        <scene sceneID="YBk-pd-VJi">
+            <objects>
+                <viewController storyboardIdentifier="more" id="sqs-GB-7Jq" customClass="FSMoreVC" sceneMemberID="viewController">
+                    <view key="view" id="fKG-9u-W1R">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                    <connections>
+                        <segue destination="SOx-ND-fJR" kind="popover" identifier="split" popoverBehavior="t" preferredEdge="minX" id="Kyp-nu-oa0"/>
+                    </connections>
+                </viewController>
+                <customObject id="PfS-FI-xaf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-341" y="-296"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="KxY-2q-syN">
+            <objects>
+                <splitViewController id="SOx-ND-fJR" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="DSh-yW-TJZ"/>
+                        <splitViewItem id="GXy-Ap-A4l"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="IpD-5c-Wlc">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="delegate" destination="SOx-ND-fJR" id="KXl-f4-ySN"/>
+                        </connections>
+                    </splitView>
+                    <connections>
+                        <outlet property="splitView" destination="IpD-5c-Wlc" id="w5F-yv-45g"/>
+                        <segue destination="Cvb-p2-QXz" kind="relationship" relationship="splitItems" id="EjV-B2-njc"/>
+                        <segue destination="Gge-2f-b9l" kind="relationship" relationship="splitItems" id="ci2-3R-WDr"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="ERI-AJ-qtm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="-296"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FsD-cv-QcP">
+            <objects>
+                <viewController id="Cvb-p2-QXz" sceneMemberID="viewController">
+                    <view key="view" id="fWl-3A-5Ng">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="c0K-hE-rOI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="194"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g0w-aZ-0S1">
+            <objects>
+                <viewController id="Gge-2f-b9l" sceneMemberID="viewController">
+                    <view key="view" id="iZU-Ql-uSQ">
+                        <rect key="frame" x="0.0" y="0.0" width="270" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="kbb-ti-kJf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="314" y="194"/>
+        </scene>
+    </scenes>
+</document>

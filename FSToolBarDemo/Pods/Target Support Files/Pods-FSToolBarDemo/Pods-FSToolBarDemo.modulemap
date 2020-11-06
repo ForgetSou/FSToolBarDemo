@@ -1,0 +1,6 @@
+framework module Pods_FSToolBarDemo {
+  umbrella header "Pods-FSToolBarDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
