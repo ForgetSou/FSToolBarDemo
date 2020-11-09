@@ -17,6 +17,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     [[NSApplication sharedApplication] setAutomaticCustomizeTouchBarMenuItemEnabled:YES];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"NSConstraintBasedLayoutVisualizeMutuallyExclusiveConstraints"];
 }
 
 

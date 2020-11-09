@@ -63,19 +63,23 @@
 #pragma mark - IBAction
 
 - (IBAction)openPanelClick:(NSButton *)sender {
-    NSOpenPanel *openPanel = [NSOpenPanel openPanel];
-    openPanel.prompt = @"选择";
-    openPanel.title = @"NSSplitView Demo";
-    openPanel.message = @"你是谁的谁";
-    openPanel.canChooseFiles = YES;
-    openPanel.canChooseDirectories = YES;
-    openPanel.allowsMultipleSelection = YES;
-    [openPanel beginSheetModalForWindow:self.view.window completionHandler:^(NSModalResponse result) {
-        if (result == NSModalResponseOK) {
-            NSLog(@"%@", openPanel.URLs);
-        }
-        sender.state = NSControlStateValueOff;
-    }];
+//    NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+//    openPanel.prompt = @"选择";
+//    openPanel.title = @"NSSplitView Demo";
+//    openPanel.message = @"你是谁的谁";
+//    openPanel.canChooseFiles = YES;
+//    openPanel.canChooseDirectories = YES;
+//    openPanel.allowsMultipleSelection = YES;
+//    [openPanel beginSheetModalForWindow:self.view.window completionHandler:^(NSModalResponse result) {
+//        if (result == NSModalResponseOK) {
+//            NSLog(@"%@", openPanel.URLs);
+//        }
+//        sender.state = NSControlStateValueOff;
+//    }];
+//    NSString *appPath = @"/Applications/Foxmail.app";
+//    [[NSWorkspace sharedWorkspace] openFile:appPath];
+//    [[NSWorkspace sharedWorkspace] launchApplication:@"Foxmail"];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://www.baidu.com"]];
 }
 
 @end

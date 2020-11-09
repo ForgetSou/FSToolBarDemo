@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		481D053C2558F6C700BB8BD5 /* FSChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 481D053A2558F6C700BB8BD5 /* FSChatCell.m */; };
+		481D053D2558F6C700BB8BD5 /* FSChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481D053B2558F6C700BB8BD5 /* FSChatCell.xib */; };
 		482F06ED2551021500CFF635 /* FSMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 482F06EC2551021500CFF635 /* FSMessageVC.m */; };
 		482F06F22551022600CFF635 /* FSContactVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 482F06F12551022600CFF635 /* FSContactVC.m */; };
 		482F06F62551023400CFF635 /* FSMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 482F06F52551023400CFF635 /* FSMoreVC.m */; };
@@ -30,6 +32,9 @@
 		12E8BB30520D3319CC01F2F2 /* Pods-FSToolBarDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSToolBarDemo.release.xcconfig"; path = "Target Support Files/Pods-FSToolBarDemo/Pods-FSToolBarDemo.release.xcconfig"; sourceTree = "<group>"; };
 		34E070D878E6CD4E1F31C050 /* Pods-FSToolBarDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSToolBarDemo.debug.xcconfig"; path = "Target Support Files/Pods-FSToolBarDemo/Pods-FSToolBarDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		3DE3D375ADC182A512B92D01 /* Pods_FSToolBarDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSToolBarDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		481D05392558F6C700BB8BD5 /* FSChatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSChatCell.h; sourceTree = "<group>"; };
+		481D053A2558F6C700BB8BD5 /* FSChatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSChatCell.m; sourceTree = "<group>"; };
+		481D053B2558F6C700BB8BD5 /* FSChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSChatCell.xib; sourceTree = "<group>"; };
 		482F06EB2551021500CFF635 /* FSMessageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSMessageVC.h; sourceTree = "<group>"; };
 		482F06EC2551021500CFF635 /* FSMessageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSMessageVC.m; sourceTree = "<group>"; };
 		482F06F02551022600CFF635 /* FSContactVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSContactVC.h; sourceTree = "<group>"; };
@@ -106,6 +111,9 @@
 				482F06EB2551021500CFF635 /* FSMessageVC.h */,
 				482F06EC2551021500CFF635 /* FSMessageVC.m */,
 				482F06F82551051300CFF635 /* message.storyboard */,
+				481D05392558F6C700BB8BD5 /* FSChatCell.h */,
+				481D053A2558F6C700BB8BD5 /* FSChatCell.m */,
+				481D053B2558F6C700BB8BD5 /* FSChatCell.xib */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -273,6 +281,7 @@
 			files = (
 				482F06FC2551052100CFF635 /* contact.storyboard in Resources */,
 				482F06FF2551052900CFF635 /* more.storyboard in Resources */,
+				481D053D2558F6C700BB8BD5 /* FSChatCell.xib in Resources */,
 				48B7A09B254A54FD00F72DF8 /* Assets.xcassets in Resources */,
 				48B7A09E254A54FD00F72DF8 /* Main.storyboard in Resources */,
 				482F06F92551051300CFF635 /* message.storyboard in Resources */,
@@ -335,6 +344,7 @@
 				48B7A0AB254A555600F72DF8 /* FSWindowCtl.m in Sources */,
 				483A5C52254FFAAC00A223F1 /* FSTabbarView.m in Sources */,
 				48B7A0A1254A54FD00F72DF8 /* main.m in Sources */,
+				481D053C2558F6C700BB8BD5 /* FSChatCell.m in Sources */,
 				48B7A096254A54FA00F72DF8 /* AppDelegate.m in Sources */,
 				4894561E255007DB00E267B7 /* FSMainCtl.m in Sources */,
 				482F06ED2551021500CFF635 /* FSMessageVC.m in Sources */,

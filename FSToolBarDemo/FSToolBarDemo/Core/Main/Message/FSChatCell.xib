@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FSChatCell"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DXn-Sd-YfP">
+                    <rect key="frame" x="20" y="10" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="aiy-8C-YWW"/>
+                        <constraint firstAttribute="width" constant="40" id="qjw-O5-1fF"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="menu-message-down" id="VQk-nK-coe"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Vx-Vc-dMb">
+                    <rect key="frame" x="78" y="22" width="37" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="7eP-n5-1bW">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7Vx-Vc-dMb" firstAttribute="leading" secondItem="DXn-Sd-YfP" secondAttribute="trailing" constant="20" id="L6R-cF-ioP"/>
+                <constraint firstItem="DXn-Sd-YfP" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="V75-KP-0Du"/>
+                <constraint firstItem="DXn-Sd-YfP" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="fC8-vC-Pi3"/>
+                <constraint firstItem="7Vx-Vc-dMb" firstAttribute="centerY" secondItem="DXn-Sd-YfP" secondAttribute="centerY" id="x4f-bw-xYL"/>
+            </constraints>
+            <point key="canvasLocation" x="-249.5" y="18"/>
+        </customView>
+        <collectionViewItem id="JrM-3L-lP4" customClass="FSChatCell">
+            <connections>
+                <outlet property="nameLab" destination="7Vx-Vc-dMb" id="Cv3-ly-sNm"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="Z3Y-BH-xTb"/>
+            </connections>
+        </collectionViewItem>
+    </objects>
+    <resources>
+        <image name="menu-message-down" width="28" height="28"/>
+    </resources>
+</document>
