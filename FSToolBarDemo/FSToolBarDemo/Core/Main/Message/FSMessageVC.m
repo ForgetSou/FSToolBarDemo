@@ -7,6 +7,7 @@
 
 #import "FSMessageVC.h"
 #import "FSChatCell.h"
+#import "FSChatHeaderView.h"
 
 @interface FSMessageVC ()
 <
@@ -28,7 +29,7 @@ NSCollectionViewDelegateFlowLayout
 
 - (NSMutableArray *)dataSource {
     if (!_dataSource) {
-        _dataSource = [NSMutableArray arrayWithArray:@[@"张三", @"李四", @"王五", @"崔六"]];
+        _dataSource = [NSMutableArray arrayWithArray:@[@"张三", @"李四", @"王五", @"崔六", @"1", @"2", @"3", @"4"]];
     }
     return _dataSource;
 }
@@ -50,6 +51,9 @@ NSCollectionViewDelegateFlowLayout
     self.collectionView.selectable = YES;
     [self.collectionView registerNib:[[NSNib alloc] initWithNibNamed:@"FSChatCell" bundle:nil]
                forItemWithIdentifier:@"kChatItem"];
+    [self.collectionView registerNib:[[NSNib alloc] initWithNibNamed:@"FSChatHeaderView" bundle:nil]
+          forSupplementaryViewOfKind:NSCollectionElementKindSectionHeader
+                      withIdentifier:@"kChatHeader"];
 }
 
 - (CGFloat)splitView:(NSSplitView *)splitView constrainMinCoordinate:(CGFloat)proposedMinimumPosition ofSubviewAt:(NSInteger)dividerIndex {
@@ -65,7 +69,7 @@ NSCollectionViewDelegateFlowLayout
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(NSCollectionView *)collectionView {
-    return 1;
+    return 3;
 }
 
 - (NSInteger)collectionView:(NSCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -98,6 +102,21 @@ NSCollectionViewDelegateFlowLayout
 
 - (void)encodeWithCoder:(nonnull NSCoder *)coder {
     
+}
+
+- (NSSize)collectionView:(NSCollectionView *)collectionView layout:(NSCollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    return NSMakeSize(self.collectionView.frame.size.width, 40);
+}
+
+- (NSView *)collectionView:(NSCollectionView *)collectionView
+viewForSupplementaryElementOfKind:(NSCollectionViewSupplementaryElementKind)kind
+               atIndexPath:(NSIndexPath *)indexPath {
+    FSChatHeaderView *headerView = [collectionView makeSupplementaryViewOfKind:NSCollectionElementKindSectionHeader
+                                                                withIdentifier:@"kChatHeader"
+                                                                  forIndexPath:indexPath];
+    headerView.wantsLayer = YES;
+    headerView.layer.backgroundColor = NSColor.redColor.CGColor;
+    return headerView;
 }
 
 @end

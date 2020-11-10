@@ -19,6 +19,8 @@
 		483A5C52254FFAAC00A223F1 /* FSTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 483A5C51254FFAAC00A223F1 /* FSTabbarView.m */; };
 		483A5C55254FFAD000A223F1 /* FSTabbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483A5C54254FFAD000A223F1 /* FSTabbarView.xib */; };
 		4894561E255007DB00E267B7 /* FSMainCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4894561D255007DB00E267B7 /* FSMainCtl.m */; };
+		48B79C0D255A64B900A5BBD1 /* FSChatHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B79C0C255A64B900A5BBD1 /* FSChatHeaderView.m */; };
+		48B79C10255A64E200A5BBD1 /* FSChatHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B79C0F255A64E200A5BBD1 /* FSChatHeaderView.xib */; };
 		48B7A096254A54FA00F72DF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B7A095254A54FA00F72DF8 /* AppDelegate.m */; };
 		48B7A09B254A54FD00F72DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B7A09A254A54FD00F72DF8 /* Assets.xcassets */; };
 		48B7A09E254A54FD00F72DF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B7A09C254A54FD00F72DF8 /* Main.storyboard */; };
@@ -50,6 +52,9 @@
 		483A5C51254FFAAC00A223F1 /* FSTabbarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSTabbarView.m; sourceTree = "<group>"; };
 		483A5C54254FFAD000A223F1 /* FSTabbarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSTabbarView.xib; sourceTree = "<group>"; };
 		4894561D255007DB00E267B7 /* FSMainCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMainCtl.m; sourceTree = "<group>"; };
+		48B79C0B255A64B900A5BBD1 /* FSChatHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSChatHeaderView.h; sourceTree = "<group>"; };
+		48B79C0C255A64B900A5BBD1 /* FSChatHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSChatHeaderView.m; sourceTree = "<group>"; };
+		48B79C0F255A64E200A5BBD1 /* FSChatHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSChatHeaderView.xib; sourceTree = "<group>"; };
 		48B7A091254A54FA00F72DF8 /* FSToolBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSToolBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B7A094254A54FA00F72DF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48B7A095254A54FA00F72DF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +119,9 @@
 				481D05392558F6C700BB8BD5 /* FSChatCell.h */,
 				481D053A2558F6C700BB8BD5 /* FSChatCell.m */,
 				481D053B2558F6C700BB8BD5 /* FSChatCell.xib */,
+				48B79C0B255A64B900A5BBD1 /* FSChatHeaderView.h */,
+				48B79C0C255A64B900A5BBD1 /* FSChatHeaderView.m */,
+				48B79C0F255A64E200A5BBD1 /* FSChatHeaderView.xib */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -281,6 +289,7 @@
 			files = (
 				482F06FC2551052100CFF635 /* contact.storyboard in Resources */,
 				482F06FF2551052900CFF635 /* more.storyboard in Resources */,
+				48B79C10255A64E200A5BBD1 /* FSChatHeaderView.xib in Resources */,
 				481D053D2558F6C700BB8BD5 /* FSChatCell.xib in Resources */,
 				48B7A09B254A54FD00F72DF8 /* Assets.xcassets in Resources */,
 				48B7A09E254A54FD00F72DF8 /* Main.storyboard in Resources */,
@@ -348,6 +357,7 @@
 				48B7A096254A54FA00F72DF8 /* AppDelegate.m in Sources */,
 				4894561E255007DB00E267B7 /* FSMainCtl.m in Sources */,
 				482F06ED2551021500CFF635 /* FSMessageVC.m in Sources */,
+				48B79C0D255A64B900A5BBD1 /* FSChatHeaderView.m in Sources */,
 				482F06F22551022600CFF635 /* FSContactVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
