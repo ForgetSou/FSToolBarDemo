@@ -65,6 +65,7 @@ static NSToolbarItemIdentifier kMoreIdentifier = @"moreID";
     self.toolbar.delegate = self;
     self.toolbar.displayMode = NSToolbarDisplayModeIconOnly;
     [self.window setToolbar:self.toolbar];
+    
 }
 
 #pragma mark - NSWindowDelegate

@@ -40,7 +40,7 @@ NSCollectionViewDelegateFlowLayout
     self.splitView.delegate = self;
     
     self.flowLayout = [[NSCollectionViewFlowLayout alloc] init];
-    self.flowLayout.itemSize = NSMakeSize(self.collectionView.frame.size.width, 60);
+    self.flowLayout.itemSize = NSMakeSize(self.collectionView.width, 60);
     self.flowLayout.minimumLineSpacing = 0;
     self.flowLayout.minimumInteritemSpacing = 0;
     self.collectionView.collectionViewLayout = self.flowLayout;
@@ -49,7 +49,7 @@ NSCollectionViewDelegateFlowLayout
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     self.collectionView.selectable = YES;
-    [self.collectionView registerNib:[[NSNib alloc] initWithNibNamed:@"FSChatCell" bundle:nil]
+    [self.collectionView registerNib:[[NSNib alloc] initWithNibNamed:NSStringFromClass([FSChatCell class]) bundle:nil]
                forItemWithIdentifier:@"kChatItem"];
     [self.collectionView registerNib:[[NSNib alloc] initWithNibNamed:@"FSChatHeaderView" bundle:nil]
           forSupplementaryViewOfKind:NSCollectionElementKindSectionHeader
@@ -65,7 +65,7 @@ NSCollectionViewDelegateFlowLayout
 }
 
 - (void)splitViewDidResizeSubviews:(NSNotification *)notification {
-    self.flowLayout.itemSize = NSMakeSize(self.collectionView.frame.size.width, 60);
+    self.flowLayout.itemSize = NSMakeSize(self.collectionView.width, 60);
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(NSCollectionView *)collectionView {
@@ -105,7 +105,7 @@ NSCollectionViewDelegateFlowLayout
 }
 
 - (NSSize)collectionView:(NSCollectionView *)collectionView layout:(NSCollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
-    return NSMakeSize(self.collectionView.frame.size.width, 40);
+    return NSMakeSize(self.collectionView.width, 40);
 }
 
 - (NSView *)collectionView:(NSCollectionView *)collectionView
@@ -114,8 +114,9 @@ viewForSupplementaryElementOfKind:(NSCollectionViewSupplementaryElementKind)kind
     FSChatHeaderView *headerView = [collectionView makeSupplementaryViewOfKind:NSCollectionElementKindSectionHeader
                                                                 withIdentifier:@"kChatHeader"
                                                                   forIndexPath:indexPath];
-    headerView.wantsLayer = YES;
-    headerView.layer.backgroundColor = NSColor.redColor.CGColor;
+    headerView.headerClick = ^{
+        NSLog(@"%ld", (long)indexPath.section);
+    };
     return headerView;
 }
 

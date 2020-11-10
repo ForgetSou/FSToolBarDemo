@@ -21,6 +21,8 @@
 		4894561E255007DB00E267B7 /* FSMainCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4894561D255007DB00E267B7 /* FSMainCtl.m */; };
 		48B79C0D255A64B900A5BBD1 /* FSChatHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B79C0C255A64B900A5BBD1 /* FSChatHeaderView.m */; };
 		48B79C10255A64E200A5BBD1 /* FSChatHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B79C0F255A64E200A5BBD1 /* FSChatHeaderView.xib */; };
+		48B79C1F255A855C00A5BBD1 /* CCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B79C1E255A855C00A5BBD1 /* CCUtility.m */; };
+		48B79C2C255A85AF00A5BBD1 /* NSView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B79C2B255A85AF00A5BBD1 /* NSView+Extension.m */; };
 		48B7A096254A54FA00F72DF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B7A095254A54FA00F72DF8 /* AppDelegate.m */; };
 		48B7A09B254A54FD00F72DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B7A09A254A54FD00F72DF8 /* Assets.xcassets */; };
 		48B7A09E254A54FD00F72DF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B7A09C254A54FD00F72DF8 /* Main.storyboard */; };
@@ -55,6 +57,15 @@
 		48B79C0B255A64B900A5BBD1 /* FSChatHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSChatHeaderView.h; sourceTree = "<group>"; };
 		48B79C0C255A64B900A5BBD1 /* FSChatHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSChatHeaderView.m; sourceTree = "<group>"; };
 		48B79C0F255A64E200A5BBD1 /* FSChatHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSChatHeaderView.xib; sourceTree = "<group>"; };
+		48B79C13255A80A500A5BBD1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		48B79C16255A811B00A5BBD1 /* FSMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSMacro.h; sourceTree = "<group>"; };
+		48B79C17255A814200A5BBD1 /* FSConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSConstant.h; sourceTree = "<group>"; };
+		48B79C18255A814C00A5BBD1 /* FSGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSGlobal.h; sourceTree = "<group>"; };
+		48B79C1B255A81CD00A5BBD1 /* FSEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSEnum.h; sourceTree = "<group>"; };
+		48B79C1D255A855C00A5BBD1 /* CCUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCUtility.h; sourceTree = "<group>"; };
+		48B79C1E255A855C00A5BBD1 /* CCUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCUtility.m; sourceTree = "<group>"; };
+		48B79C2A255A85AF00A5BBD1 /* NSView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSView+Extension.h"; sourceTree = "<group>"; };
+		48B79C2B255A85AF00A5BBD1 /* NSView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSView+Extension.m"; sourceTree = "<group>"; };
 		48B7A091254A54FA00F72DF8 /* FSToolBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSToolBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B7A094254A54FA00F72DF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48B7A095254A54FA00F72DF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -129,13 +140,10 @@
 		483A5C5A2550075400A223F1 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				48B7A0B1254AB1B100F72DF8 /* FSCustomBtn.h */,
-				48B7A0B2254AB1B100F72DF8 /* FSCustomBtn.m */,
-				483A5C4C254FFA5300A223F1 /* FSTabbarBtn.h */,
-				483A5C4D254FFA5300A223F1 /* FSTabbarBtn.m */,
-				483A5C50254FFAAC00A223F1 /* FSTabbarView.h */,
-				483A5C51254FFAAC00A223F1 /* FSTabbarView.m */,
-				483A5C54254FFAD000A223F1 /* FSTabbarView.xib */,
+				48B79C1C255A853E00A5BBD1 /* Utility */,
+				48B79C1A255A81B500A5BBD1 /* Category */,
+				48B79C19255A818500A5BBD1 /* View */,
+				48B79C12255A805500A5BBD1 /* Macro */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -189,6 +197,49 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		48B79C12255A805500A5BBD1 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				48B79C16255A811B00A5BBD1 /* FSMacro.h */,
+				48B79C17255A814200A5BBD1 /* FSConstant.h */,
+				48B79C18255A814C00A5BBD1 /* FSGlobal.h */,
+				48B79C1B255A81CD00A5BBD1 /* FSEnum.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		48B79C19255A818500A5BBD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				483A5C50254FFAAC00A223F1 /* FSTabbarView.h */,
+				483A5C51254FFAAC00A223F1 /* FSTabbarView.m */,
+				483A5C54254FFAD000A223F1 /* FSTabbarView.xib */,
+				48B7A0B1254AB1B100F72DF8 /* FSCustomBtn.h */,
+				48B7A0B2254AB1B100F72DF8 /* FSCustomBtn.m */,
+				483A5C4C254FFA5300A223F1 /* FSTabbarBtn.h */,
+				483A5C4D254FFA5300A223F1 /* FSTabbarBtn.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48B79C1A255A81B500A5BBD1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				48B79C2A255A85AF00A5BBD1 /* NSView+Extension.h */,
+				48B79C2B255A85AF00A5BBD1 /* NSView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		48B79C1C255A853E00A5BBD1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				48B79C1D255A855C00A5BBD1 /* CCUtility.h */,
+				48B79C1E255A855C00A5BBD1 /* CCUtility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		48B7A088254A54FA00F72DF8 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +267,7 @@
 				48B0883125529C8F004D13ED /* Resource */,
 				48B7A09F254A54FD00F72DF8 /* Info.plist */,
 				48B7A0A0254A54FD00F72DF8 /* main.m */,
+				48B79C13255A80A500A5BBD1 /* PrefixHeader.pch */,
 			);
 			path = FSToolBarDemo;
 			sourceTree = "<group>";
@@ -352,10 +404,12 @@
 				482F06F62551023400CFF635 /* FSMoreVC.m in Sources */,
 				48B7A0AB254A555600F72DF8 /* FSWindowCtl.m in Sources */,
 				483A5C52254FFAAC00A223F1 /* FSTabbarView.m in Sources */,
+				48B79C2C255A85AF00A5BBD1 /* NSView+Extension.m in Sources */,
 				48B7A0A1254A54FD00F72DF8 /* main.m in Sources */,
 				481D053C2558F6C700BB8BD5 /* FSChatCell.m in Sources */,
 				48B7A096254A54FA00F72DF8 /* AppDelegate.m in Sources */,
 				4894561E255007DB00E267B7 /* FSMainCtl.m in Sources */,
+				48B79C1F255A855C00A5BBD1 /* CCUtility.m in Sources */,
 				482F06ED2551021500CFF635 /* FSMessageVC.m in Sources */,
 				48B79C0D255A64B900A5BBD1 /* FSChatHeaderView.m in Sources */,
 				482F06F22551022600CFF635 /* FSContactVC.m in Sources */,
@@ -498,6 +552,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CJVWY5HNMC;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREFIX_HEADER = FSToolBarDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FSToolBarDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,6 +574,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CJVWY5HNMC;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREFIX_HEADER = FSToolBarDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FSToolBarDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

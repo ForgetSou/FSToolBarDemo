@@ -12,7 +12,22 @@
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     
-    // Drawing code here.
+    self.wantsLayer = YES;
+    self.layer.backgroundColor = NSColor.redColor.CGColor;
+    [self addGestureRecognizer:[[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(headClick)]];
 }
+
+- (void)setHeader:(NSString *)header {
+    _header = header;
+    
+    
+}
+
+- (void)headClick {
+    if (self.headerClick) {
+        self.headerClick();
+    }
+}
+
 
 @end

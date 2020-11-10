@@ -12,7 +12,7 @@
 @interface FSMoreVC ()
 
 @property (assign, nonatomic) int ticketsCount;
-@property (assign, nonatomic) OSSpinLock ticketLock;
+//@property (assign, nonatomic) OSSpinLock ticketLock;
 @property (strong, nonatomic) NSLock *lock;
 @property (strong, nonatomic) NSRecursiveLock *rLock;
 @property (strong, nonatomic) NSCondition *condition;
@@ -28,7 +28,7 @@
     self.view.layer.backgroundColor = NSColor.whiteColor.CGColor;
     [self.view addGestureRecognizer:[[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(viewClick)]];
     
-    self.ticketLock = OS_SPINLOCK_INIT;
+//    self.ticketLock = OS_SPINLOCK_INIT;
     [self ticketTestAction];
 }
 
