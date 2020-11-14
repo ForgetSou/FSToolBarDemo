@@ -19,6 +19,7 @@ NSCollectionViewDelegateFlowLayout
 
 @property (weak) IBOutlet NSSplitView *splitView;
 @property (weak) IBOutlet NSCollectionView *collectionView;
+@property (weak) IBOutlet NSTextField *contentLab;
 
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (strong, nonatomic) NSCollectionViewFlowLayout *flowLayout;

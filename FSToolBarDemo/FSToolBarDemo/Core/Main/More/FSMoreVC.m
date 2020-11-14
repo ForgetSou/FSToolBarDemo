@@ -17,19 +17,42 @@
 @property (strong, nonatomic) NSRecursiveLock *rLock;
 @property (strong, nonatomic) NSCondition *condition;
 
+@property (strong, nonatomic) NSTextField *contentLab;
+
 @end
 
 @implementation FSMoreVC
+
+- (NSTextField *)contentLab {
+    if (!_contentLab) {
+        _contentLab = [[NSTextField alloc] initWithFrame:CGRectMake(100, 100, 500, 50)];
+        _contentLab.selectable = YES;
+        _contentLab.focusRingType = NSFocusRingTypeNone;
+        _contentLab.bordered = NO;
+        _contentLab.editable = NO;
+        _contentLab.stringValue = @"iOS开发中解决UITableView嵌套ScrollView(UICollectionView)的手势冲突";
+        [_contentLab.cell setUsesSingleLineMode:false];
+        [[_contentLab cell] setTruncatesLastVisibleLine:false];
+        _contentLab.alignment = NSTextAlignmentCenter;
+    }
+    return _contentLab;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
     self.view.wantsLayer = YES;
     self.view.layer.backgroundColor = NSColor.whiteColor.CGColor;
-    [self.view addGestureRecognizer:[[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(viewClick)]];
+//    [self.view addGestureRecognizer:[[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(viewClick)]];
     
 //    self.ticketLock = OS_SPINLOCK_INIT;
-    [self ticketTestAction];
+//    [self ticketTestAction];
+    
+    [self.view addSubview:self.contentLab];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(30 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];
+        NSLog(@"%@", [pasteboard stringForType:NSPasteboardTypeString]);
+    });
 }
 
 - (NSRecursiveLock *)rLock {
